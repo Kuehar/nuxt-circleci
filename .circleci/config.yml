@@ -19,7 +19,7 @@ jobs:
           command: firebase deploy --token 1//0eBFvyb0JU94nCgYIARAAGA4SNwF-L9IrkBAwAagq0rrHXJP--igGLuazDx32W3ko7aDOZeKCHlW2KYW3gtEhSKYQHhKa9lolX4Y
           --project $nuxt-django-a835e1
           
-workflows:
+workflows: 
   version: 2
   build_and_deploy:
     jobs:
