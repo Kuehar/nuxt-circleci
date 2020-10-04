@@ -6,7 +6,7 @@
         sample
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        Nuxt.js project with CircleCI!!
       </h2>
       <div class="links">
         <a

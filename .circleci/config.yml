@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  deploy_master:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: install firebase-tools
+          command: sudo npm install -g firebase-tools
+      - run:
+          name: install nuxt
+          command: npm install nuxt
+      - run:
+          name: build project
+          command: npm run build
+      - run:
+          name: Deploy Firebase Hosting
+          command: firebase deploy --token 1//0eBFvyb0JU94nCgYIARAAGA4SNwF-L9IrkBAwAagq0rrHXJP--igGLuazDx32W3ko7aDOZeKCHlW2KYW3gtEhSKYQHhKa9lolX4Y
+          --project $nuxt-django-a835e1
+          
+workflows:
+  version: 2
+  build_and_deploy: # ワークフローの名前
+    jobs:
+        - deploy_master:
+          filters:
+            branches:
+              only: master # masterブランチのみを実行対象とします
