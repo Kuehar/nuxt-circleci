@@ -12,7 +12,7 @@ jobs:
           name: install nuxt
           command: npm install nuxt
       - run:
-          name: nuxt-circleci
+          name: sample
           command: npm run build
       - run:
           name: Deploy Firebase Hosting
