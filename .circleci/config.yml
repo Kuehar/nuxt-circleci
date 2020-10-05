@@ -12,11 +12,11 @@ jobs:
           name: install nuxt
           command: npm install nuxt
       - run:
-          name: sample
+          name: build project
           command: npm run build
       - run:
           name: Deploy Firebase Hosting
-          command: firebase deploy --token $FIREBASE_TOKEN --project $PROJECT_ID
+          command: firebase deploy --token=$FIREBASE_TOKEN
 
 workflows:
   version: 2
