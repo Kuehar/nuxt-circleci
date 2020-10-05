@@ -16,7 +16,7 @@ jobs:
           command: npm run build
       - run:
           name: Deploy Firebase Hosting
-          command: firebase deploy --token $FIREBASE_CI_TOKEN --project $PROJECT_ID
+          command: firebase deploy --token $FIREBASE_TOKEN --project $PROJECT_ID
 
 workflows:
   version: 2
