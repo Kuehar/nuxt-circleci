@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  deploy_master:
+  deploy_main:
     docker:
       - image: circleci/node:latest
     steps:
