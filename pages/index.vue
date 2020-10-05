@@ -3,7 +3,7 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        sample
+        Connected with CircleCI!
       </h1>
       <h2 class="subtitle">
         Hello Nuxt.js project with CircleCI!!
