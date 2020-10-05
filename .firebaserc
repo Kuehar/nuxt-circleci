@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "nuxt-django-a835e1"
+    "default": "nuxt-django-a835e1",
+    "nuxt-circleci": "nuxt-django-a835e1"
   }
 }
